@@ -47,9 +47,33 @@
     echo "Hello $name";;
   }
   sayHello("John");
+
   // php statements
   // variable and types
   // control flow
   // loops
   // functions
+
+ // swap two numbers without using temp variable
+  $a = 10;
+  $b = 20;
+  $temp = $a; // temp = 10
+  $a = $b;  // a = 20
+  $b = $temp; //b = 10
+  echo "<br>";
+  echo $a;
+  echo "<br>";
+  echo $b;
+ 
+//Check data types using var_dump()
+  var_dump($name); // value and type
+  var_dump($age);
+  var_dump($geight);
+  var_dump($is_married);
+  var_dump($hobbies);
+
+
 ?>
+
+
+
