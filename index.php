@@ -44,7 +44,7 @@
   // }
   function sayHello($name) {
     echo "<br>";
-    echo "Hello $name";
+    echo "Hello $name";;
   }
   sayHello("John");
   // php statements
