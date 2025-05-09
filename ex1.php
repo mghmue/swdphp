@@ -14,7 +14,7 @@ if ($number % 2 !== 0){
 ?>
 
 
-//witch 
+  <!-- witch  -->
 <?php
 $num1 = 10;
 $num2 = 5;
@@ -36,4 +36,17 @@ switch ($action) {
      default:
         echo "error cord";
 }
+?>
+
+   <!-- //Write a function that calculates the factorial of a number.// -->
+<?php
+    function factorial($num1) {
+        $result = 1;
+        for ($num2 = 1; $num2 <= $num1; $num2++) {
+            $result *= $num2;
+        }
+        return $result;
+    }
+    
+    echo factorial(4); 
 ?>
