@@ -95,11 +95,11 @@ foreach ($person as $key => $value) {
 
 
 //Ex
- $mark = array(
+$mark = array(
          "kyaw" => 80,
          "aung" => 40,
          "Hla" => 70,
- );
+);
 
 foreach ($mark as $key => $value){
     if ($value >= 50) {
@@ -110,6 +110,22 @@ foreach ($mark as $key => $value){
      echo $key . " failed";
     }
 }
+
+//Multidimensional Array
+    $user = array(
+        array("name" => "Aung", "age" => 30, "city" => "Yangon"),
+        array("name" => "Kyaw", "age" => 40, "city" => "Mandalay"),
+        array("name" => "Hla", "age" => 50, "city" => "Mandalay"),
+    );
+
+
+
+
+
+
+
+
+
 ?>
 
 <!-- defult valeue -->
