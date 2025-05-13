@@ -24,11 +24,11 @@
         </tr>
         <?php foreach ($students as $student):?>
             <tr>
-                <td><?$student['name']?></td>
-                <td><?$student['age']?></td>
-                <td><?$student['Grade']?></td>
+                <td><?= $student['name']?></td>
+                <td><?= $student['age']?></td>
+                <td><?= $student['grade']?></td>
             </tr>
-         <?php endforeach; ?>
+        <?php endforeach; ?>
     </table>
 
 
