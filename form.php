@@ -30,9 +30,8 @@
 
         <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $name = htmlspecialchars($_POST["Name"]);
+                $name = htmlspecialchars($_POST["name"]);
                 $age = $_POST["Age"];
-
                 echo "Name: $name<br>";
                 echo "Age: $age<br>";
             } else {
