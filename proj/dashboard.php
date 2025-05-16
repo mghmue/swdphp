@@ -3,7 +3,13 @@ session_start();
 if (!isset($_SESSION['login'])) {
     header("Location: index.php");
     exit();
-}
+
+}   
+  //theme setup
+  $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
+  $bg = $theme == 'dark' ? '#222' : '#fff';
+  $color = $theme == 'dark' ? '#fff' : '#222'
+
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +19,7 @@ if (!isset($_SESSION['login'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: <?php echo $bg; ?>; color: <?php echo $color; ?>">
    Welcome to Dashboard, <?php echo $_SESSION['username']; ?>! |
     <a href="logout.php">Logout</a> |
     <a href="set_theme.php">Switch Theme</a>

@@ -5,6 +5,8 @@
     header("Location: dashboard.php");
   }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +21,7 @@
       <option value="light">Light</option>
       <option value="dark">Dark</option>
     </select>
-    <input type="submit" value="Save Theme">
+    <input type="submit" value="Save Theme"> 
   </form>  
 </body>
 </html>
