@@ -1,12 +1,12 @@
-<?php
+<!-- <?php
   if($_SERVER["REQUEST_METHOD"] == "POST") {
     $theme = $_POST['theme'];
     setcookie("theme", $theme, time() + (86400 * 30), "/");
     header("Location: dashboard.php");
   }
-?>
+?> -->
 
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,4 +24,4 @@
     <input type="submit" value="Save Theme"> 
   </form>  
 </body>
-</html>
+</html> -->

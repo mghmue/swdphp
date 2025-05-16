@@ -12,6 +12,16 @@ if (!isset($_SESSION['login'])) {
 
 ?>
 
+
+
+<?php
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+    $theme = $_POST['theme'];
+    setcookie("theme", $theme, time() + (86400 * 30), "/");
+    header("Location: dashboard.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,8 +32,17 @@ if (!isset($_SESSION['login'])) {
 <body style="background-color: <?php echo $bg; ?>; color: <?php echo $color; ?>">
    Welcome to Dashboard, <?php echo $_SESSION['username']; ?>! |
     <a href="logout.php">Logout</a> |
-    <a href="set_theme.php">Switch Theme</a>
+    <a href="set_theme.php">Switch Theme</a> |
     
+     <form action="#" method="post">
+        <!-- <label for="theme">Switch Theme</label> -->
+        <select name="theme" id="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        </select>
+        <input type="submit" value="Save Theme"> 
+    </form> 
+    <br><br>
     <!-- Logout -->
     <!-- Theme switch -->
    <!-- Logout -->
@@ -50,5 +69,8 @@ if (!isset($_SESSION['login'])) {
                 <td><?= $student["grade"]?></td>
             </tr>
         <?php endforeach; ?>
+     </table>
+
+ 
 </body>
 </html>
