@@ -14,7 +14,12 @@ if (!isset($_SESSION['login'])) {
     <title>Document</title>
 </head>
 <body>
-   <p>Welcome, dashboard</p>
+   Welcome to Dashboard, <?php echo $_SESSION['username']; ?>! |
+    <a href="logout.php">Logout</a> |
+    <a href="set_theme.php">Switch Theme</a>
+    
+    <!-- Logout -->
+    <!-- Theme switch -->
    <!-- Logout -->
     <!-- Theme switch -->
 

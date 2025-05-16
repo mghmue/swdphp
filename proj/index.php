@@ -1,7 +1,8 @@
 <?php
 session_start();
 if (isset($_SESSION['login'])) {
-    session_destroy();     //Session ဖျက်ချင်ရင်
+    header("Location: dashboard.php");
+    exit();
 }
 ?>
 

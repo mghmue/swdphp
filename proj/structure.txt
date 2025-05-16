@@ -14,4 +14,4 @@
 
 // set_theme.php (btn to switch)
 
-// logout.phph (delete login session)
+// logout.php (delete login session)
